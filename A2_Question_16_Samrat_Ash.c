@@ -21,7 +21,7 @@ int main() {
     while (t <= 2.0) {
         exact = exact_solution(t);
         error = exact - y;
-        error_bound = 0.2 * (exact + pow(t, 2) + 1); // Error bound derived in class
+        error_bound=0.2*(exp(t)-1); // Error bound derived in class
 
         printf("%.1f\t%.6f\t%.6f\t%.6f\t%.6f\n", t, exact, y, error, error_bound);
 
